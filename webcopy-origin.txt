@@ -1,0 +1,164 @@
+Uri: https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5.0.1/dark.min.css
+File Name: C:\Downloaded Web Sites\funtime.su\npm\@sweetalert2\theme-dark@5.0.1\dark.min.css
+Content Type: text/css
+
+Uri: https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css
+File Name: C:\Downloaded Web Sites\funtime.su\npm\sweetalert2@11.0.18\dist\sweetalert2.min.css
+Content Type: text/css
+
+Uri: https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js
+File Name: C:\Downloaded Web Sites\funtime.su\npm\sweetalert2@11.0.18\dist\sweetalert2.min.js
+Content Type: application/javascript
+
+Uri: https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap
+File Name: C:\Downloaded Web Sites\funtime.su\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6aX8.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6aX8.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9aX8.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8aX8.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9aX8.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16aX8.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6aX8.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9aX8.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9aX8.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Uw-.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Uw-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC70w-.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC70w-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Ew-.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Ew-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr70w-.ttf
+File Name: C:\Downloaded Web Sites\funtime.su\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr70w-.ttf
+Content Type: font/ttf
+
+Uri: https://funtime.su/
+File Name: C:\Downloaded Web Sites\funtime.su\index.htm
+Content Type: text/html
+
+Uri: https://funtime.su/assets/css/jquery-ui.min.css
+File Name: C:\Downloaded Web Sites\funtime.su\assets\css\jquery-ui.min.css
+Content Type: text/css
+
+Uri: https://funtime.su/assets/css/responsive.min.css?v=224
+File Name: C:\Downloaded Web Sites\funtime.su\assets\css\responsive.min.css
+Content Type: text/css
+
+Uri: https://funtime.su/assets/img/close.svg
+File Name: C:\Downloaded Web Sites\funtime.su\assets\img\close.svg
+Content Type: image/svg+xml
+
+Uri: https://funtime.su/assets/img/logos/mc_symbol.svg
+File Name: C:\Downloaded Web Sites\funtime.su\assets\img\logos\mc_symbol.svg
+Content Type: image/svg+xml
+
+Uri: https://funtime.su/assets/img/logos/Mir-logo.SVG.svg
+File Name: C:\Downloaded Web Sites\funtime.su\assets\img\logos\Mir-logo.SVG.svg
+Content Type: image/svg+xml
+
+Uri: https://funtime.su/assets/img/logos/spb.svg
+File Name: C:\Downloaded Web Sites\funtime.su\assets\img\logos\spb.svg
+Content Type: image/svg+xml
+
+Uri: https://funtime.su/assets/img/logos/vbm_blu_2021.png
+File Name: C:\Downloaded Web Sites\funtime.su\assets\img\logos\vbm_blu_2021.png
+Content Type: image/png
+
+Uri: https://funtime.su/assets/img/menu.svg
+File Name: C:\Downloaded Web Sites\funtime.su\assets\img\menu.svg
+Content Type: image/svg+xml
+
+Uri: https://funtime.su/assets/js/clipboard.min.js
+File Name: C:\Downloaded Web Sites\funtime.su\assets\js\clipboard.min.js
+Content Type: application/javascript
+
+Uri: https://funtime.su/assets/js/jquery-3.5.1.min.js
+File Name: C:\Downloaded Web Sites\funtime.su\assets\js\jquery-3.5.1.min.js
+Content Type: application/javascript
+
+Uri: https://funtime.su/assets/js/jquery-ui.min.js
+File Name: C:\Downloaded Web Sites\funtime.su\assets\js\jquery-ui.min.js
+Content Type: application/javascript
+
+Uri: https://funtime.su/assets/js/main.js?v=224
+File Name: C:\Downloaded Web Sites\funtime.su\assets\js\main.js
+Content Type: application/javascript
+
+Uri: https://funtime.su/contacts
+File Name: C:\Downloaded Web Sites\funtime.su\contacts.html
+Content Type: text/html
+
+Uri: https://funtime.su/Dogovor-oferta.pdf
+File Name: C:\Downloaded Web Sites\funtime.su\Dogovor-oferta.pdf
+Content Type: application/pdf
+
+Uri: https://funtime.su/favicon.png?v=5
+File Name: C:\Downloaded Web Sites\funtime.su\favicon.png
+Content Type: image/png
+
+Uri: https://funtime.su/privacy.pdf
+File Name: C:\Downloaded Web Sites\funtime.su\privacy.pdf
+Content Type: application/pdf
+
+Uri: https://funtime.su/promotions
+File Name: C:\Downloaded Web Sites\funtime.su\promotions.html
+Content Type: text/html
+
+Uri: https://funtime.su/rules
+File Name: C:\Downloaded Web Sites\funtime.su\rules.html
+Content Type: text/html
+

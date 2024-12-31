@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Акции | FunTime</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css?v=224">
+    <link rel="stylesheet" href="assets/css/responsive.min.css?v=224">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="shortcut icon" href="favicon.png?v=5" type="image/x-icon">
+</head>
+<body>
+<div class="mobile_menu">
+    <div class="container">
+        <div class="m_header">
+            <a class="logo" href="index.htm">
+                <p>Fun<span>Time</span>.su</p>
+            </a>
+            <img class="menu_close" src="assets/img/close.svg" alt="">
+        </div>
+        <div class="menu">
+            <a href="index.htm">Главная</a>
+            <a href="promotions.html">Акции</a>
+            <a href="rules.html">Правила</a>
+            <a href="contacts.html">Контакты</a>
+        </div>
+    </div>
+</div>
+
+<div class="header">
+    <div class="container">
+        <div class="topline">
+            <a class="logo" href="index.htm">
+                <p>Fun<span>Time</span>.su</p>
+            </a>
+            <div class="main_menu">
+                <a href="index.htm">Главная</a>
+                <a class="active" href="promotions.html">Акции</a>
+                <a href="rules.html">Правила</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="open_menu">
+                <img src="assets/img/menu.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="item_modal" id="item_modal">
+    <form class="buy_item box_light" method="post" id="buy_form">
+        <div id="donate-info" style="display:block;">
+            <div class="close_bModal">
+                <img src="assets/img/close.svg" alt="">
+            </div>
+            <input type="hidden" name="id">
+            <input type="hidden" name="server">
+            <input type="hidden" name="method">
+            <input type="hidden" name="checking" value="1">
+            <input type="hidden" name="promotion" value="0">
+            <input type="hidden" name="payment-method">
+            <input type="hidden" name="payment-operator">
+
+            <p class="name">Покупка <span>"{good}"</span></p>
+            <input class="input" type="text" name="nick" id="input_nick" placeholder="Ник получателя">
+            <div id="enter_promo" style="padding-right: 5px">
+                <input class="input" type="text" name="promo" placeholder="Промокод">
+            </div>
+            <div id="g_inputs">
+                <div id="enter_amount" style="padding-right: 5px">
+                    <input class="input" type="number" name="amount" placeholder="Кол-во">
+                </div>
+                <div id="enter_amount_2" style="padding-left: 5px">
+                    <input class="input" type="number" name="amount_2" placeholder="Кол-во">
+                </div>
+            </div>
+			<input id="a_buy" type="checkbox" name="anon" hidden="">
+			<input id="g_buy" type="checkbox" name="gift" hidden="">
+			<!--
+            <div class="checkboxes">
+                <div>
+                    <label for="a_buy">Анонимная<br> покупка:</label>
+                    <div class="checkbox">
+                        <input id="a_buy" type="checkbox" name="anon">
+                        <span><img src="/assets/img/check.png" alt=""></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="g_buy">Покупка в<br> подарок:</label>
+                    <div class="checkbox">
+                        <input id="g_buy" type="checkbox" name="gift">
+                        <span><img src="/assets/img/check.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+			-->
+
+            <input style="display: none;" id="sender_input" class="input" type="text" name="sender_name" placeholder="Ник отправителя">
+
+            <div class="check_info">
+
+            </div>
+
+            <div class="action">
+                <p id="modal_price">Стоимость: <br><span>150 руб.</span></p>
+                <button type="submit" data-ind="method_button">Проверить</button>
+            </div>
+
+            <p class="privacy_policy">
+                Нажимая кнопку <span>"Приобрести"</span> Вы автоматически
+                соглашаетесь с <a href="Dogovor-oferta.pdf">пользовательским соглашением.</a>
+            </p>
+        </div>
+        <div id="payment-method" style="display: none">
+            <div class="close_bModal" data-type="methods">
+                <img src="assets/img/close.svg" alt="">
+            </div>
+            <p class="name">Выберите метод оплаты</p><br>
+            <div id="e-pay1" style="position: relative">
+                <ul class="methods" id="e-pay">
+
+                    <li>
+                        <button class="payment-btn" type="button" data-method="card" data-operator="up" data-additional="true" title="Карты РФ"></button>
+                    </li>
+					<!--
+					<li>
+                        <button class="payment-btn" type="button" data-method="cardworld" data-operator="up" data-additional="true" title="Карты (Другие страны)"></button>
+                    </li>
+					-->
+					<li>
+                        <button class="payment-btn" type="button" data-method="sbp" data-operator="up2" title="СБП"></button>
+                    </li>
+					<!--
+                    <li>
+                        <button class="payment-btn" type="button" data-method="qiwi" data-operator="up" data-additional="true" title="Qiwi"></button>
+                    </li>!-->
+                    <li>
+                        <button class="payment-btn" type="button" data-method="yandex" data-operator="ei2" title="ЮMoney"></button>
+                    </li>
+					
+					<!--
+                    <li>
+                        <button class="payment-btn" type="button" data-method="mts" data-operator="gp" title="МТС"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="megafon" data-operator="gp" title="Мегафон"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="beeline" data-operator="gp" title="Билайн"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="tele2" data-operator="gp" title="Теле2"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="yota" data-operator="gp" title="Yota"></button>
+                    </li>!-->
+                    <li>
+                        <button class="payment-btn" type="button" data-method="pm" data-operator="ei2" title="Perfect Money"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="crypto" data-operator="ei2" title="Крипта"></button>
+                    </li>
+					
+
+					<!--
+					<li>
+						<button class="payment-btn" type="button" data-method="card" data-operator="ei2" title="Карты СНГ"></button>
+                    </li>
+					<li>
+                        <button class="payment-btn" type="button" data-method="cardkzt" data-operator="fk" title="Карты (Тенге)"></button>
+                    </li>!-->
+
+                    <!--
+                    <li>
+                        <button class="payment-btn" type="button" data-method="yandexpay" data-operator="rk" title="Y.Pay"></button>
+                    </li>
+					!-->
+					
+					
+					<!--
+                    <li>
+                        <button class="payment-btn" type="button" data-method="wm" data-operator="wap" title="WMZ/WME"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="shc" data-operator="wap-fk" title="ShibaCoin (Крипта)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="wvs" data-operator="wap-fk" title="Waves (Крипта)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="dgc" data-operator="wap-fk" title="DogeCoin (Крипта)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="advcash" data-operator="ap" title="AdvCash (Крипта)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="fkwallet" data-operator="wap-fk" title="FKWallet (Крипто Кошелёк)"></button>
+                    </li>
+					!-->
+					
+					
+                    <!--
+                    <li>
+                        <button class="payment-btn" type="button" data-method="qiwi" data-operator="qiwi" title="Qiwi"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="card" data-operator="ym" title="Карты(ЮMoney)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="card" data-operator="qiwi" title="Карты(Киви)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="card" data-operator="rk" title="Карты(Робокасса)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="yandex" data-operator="ym" title="ЮMoney"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="crypto" data-operator="ei2" title="Криптовалюта"></button>
+                    </li>
+					<li>
+                        <button class="payment-btn" type="button" data-method="rk" data-operator="rk" title="Robokassa(Все остальные методы)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="wap" data-operator="wap" title="Wapkassa(Все остальные методы)"></button>
+                    </li>
+                    !-->
+                </ul>
+                <div class="over"></div>
+            </div>
+        </div>
+        <div id="additional_info" style="display: none">
+            <div class="close_bModal" data-type="add_info">
+                <img src="assets/img/close.svg" alt="">
+            </div>
+            <p class="asd"></p><br>
+            <p><span>Требуются данные: </span></p>
+
+            <input class="input" type="email" name="email" id="input_email" placeholder="Введите эмайл"><br>
+
+            <div class="action" style="justify-content: center">
+                <button type="submit" style="width: 100%" data-ind="add_button">Продолжить</button>
+            </div>
+            <p class="privacy_policy">
+                Нажимая кнопку <span>"Продолжить"</span> Вы автоматически
+                соглашаетесь с <a href="Dogovor-oferta.pdf">пользовательским соглашением.</a>
+            </p>
+        </div>
+    </form>
+</div>
+
+
+<div class="promotions content_margin">
+    <div class="container">
+        
+        <p style="display:none;" class="server_title">Выберите сервер</p>
+        <select style="display:none;" class="server_select" id="promotions_server">
+            <option selected="" value="1">FunTime</option>        </select>
+        
+        <div class="row" id="promotions_list">
+            
+        </div>
+    </div>
+</div>
+<div class="container-fluid footer-container">
+    <div class="container">
+        <div class="footer" style="padding-top: 20px">
+            <p class="copyright ">Сервер FunTime никак не относится к Mojang, AB.<br> ИП Литвинчук Николай
+                Николаевич<br>
+                ИНН 644940989449, ОРГНИП 322645700028254<br>
+				Копирование контента с сайта, серверов проекта запрещено.<br><a href="Dogovor-oferta.pdf">Договор оферты</a> | <a href="privacy.pdf">Политика
+                    обработки персональных данных</a></p>
+            <p class="developer">© 2024 FunTime.su<br> Все Права Защищены</p>
+        </div>
+        <div class="footer" style="height: 50px; justify-content: center">
+            <div class=""><img src="assets/img/logos/spb.svg" style="width: 100px" alt=""></div>
+            <div class=""><img src="assets/img/logos/Mir-logo.SVG.svg" style="width: 100px" alt=""></div>
+            <div class=""><img src="assets/img/logos/mc_symbol.svg" style="width: 100px" alt=""></div>
+            <div class=""><img src="assets/img/logos/vbm_blu_2021.png" style="width: 100px" alt=""></div>
+    </div>
+</div>
+</div>
+
+
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+
+<script src="assets/js/clipboard.min.js"></script>
+<script src="assets/js/main.js?v=224"></script>
+<script src="npm/sweetalert2%4011.0.18/dist/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="npm/sweetalert2%4011.0.18/dist/sweetalert2.min.css">
+<link rel="stylesheet" href="npm/%40sweetalert2/theme-dark%405.0.1/dark.min.css">
+
+<!-- <script src="https://widget.unitpay.monеey/unitpay.js"></script> -->
+</body>
+</html>

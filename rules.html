@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>FunTime - Правила</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css?v=224">
+    <link rel="stylesheet" href="assets/css/responsive.min.css?v=224">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="shortcut icon" href="favicon.png?v=5" type="image/x-icon">
+</head>
+<body>
+<div class="mobile_menu">
+    <div class="container">
+        <div class="m_header">
+            <a class="logo" href="index.htm">
+                <p>Fun<span>Time</span>.su</p>
+            </a>
+            <img class="menu_close" src="assets/img/close.svg" alt="">
+        </div>
+        <div class="menu">
+            <a href="index.htm">Главная</a>
+            <a href="promotions.html">Акции</a>
+            <a href="rules.html">Правила</a>
+            <a href="contacts.html">Контакты</a>
+        </div>
+    </div>
+</div>
+
+<div class="header">
+    <div class="container">
+        <div class="topline">
+            <a class="logo" href="index.htm">
+                <p>Fun<span>Time</span>.su</p>
+            </a>
+            <div class="main_menu">
+                <a href="index.htm">Главная</a>
+                <a href="promotions.html">Акции</a>
+                <a class="active" href="rules.html">Правила</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="open_menu">
+                <img src="assets/img/menu.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="item_modal" id="item_modal">
+    <form class="buy_item box_light" method="post" id="buy_form">
+        <div id="donate-info" style="display:block;">
+            <div class="close_bModal">
+                <img src="assets/img/close.svg" alt="">
+            </div>
+            <input type="hidden" name="id">
+            <input type="hidden" name="server">
+            <input type="hidden" name="method">
+            <input type="hidden" name="checking" value="1">
+            <input type="hidden" name="promotion" value="0">
+            <input type="hidden" name="payment-method">
+            <input type="hidden" name="payment-operator">
+
+            <p class="name">Покупка <span>"{good}"</span></p>
+            <input class="input" type="text" name="nick" id="input_nick" placeholder="Ник получателя">
+            <div id="enter_promo" style="padding-right: 5px">
+                <input class="input" type="text" name="promo" placeholder="Промокод">
+            </div>
+            <div id="g_inputs">
+                <div id="enter_amount" style="padding-right: 5px">
+                    <input class="input" type="number" name="amount" placeholder="Кол-во">
+                </div>
+                <div id="enter_amount_2" style="padding-left: 5px">
+                    <input class="input" type="number" name="amount_2" placeholder="Кол-во">
+                </div>
+            </div>
+			<input id="a_buy" type="checkbox" name="anon" hidden="">
+			<input id="g_buy" type="checkbox" name="gift" hidden="">
+			<!--
+            <div class="checkboxes">
+                <div>
+                    <label for="a_buy">Анонимная<br> покупка:</label>
+                    <div class="checkbox">
+                        <input id="a_buy" type="checkbox" name="anon">
+                        <span><img src="/assets/img/check.png" alt=""></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="g_buy">Покупка в<br> подарок:</label>
+                    <div class="checkbox">
+                        <input id="g_buy" type="checkbox" name="gift">
+                        <span><img src="/assets/img/check.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+			-->
+
+            <input style="display: none;" id="sender_input" class="input" type="text" name="sender_name" placeholder="Ник отправителя">
+
+            <div class="check_info">
+
+            </div>
+
+            <div class="action">
+                <p id="modal_price">Стоимость: <br><span>150 руб.</span></p>
+                <button type="submit" data-ind="method_button">Проверить</button>
+            </div>
+
+            <p class="privacy_policy">
+                Нажимая кнопку <span>"Приобрести"</span> Вы автоматически
+                соглашаетесь с <a href="Dogovor-oferta.pdf">пользовательским соглашением.</a>
+            </p>
+        </div>
+        <div id="payment-method" style="display: none">
+            <div class="close_bModal" data-type="methods">
+                <img src="assets/img/close.svg" alt="">
+            </div>
+            <p class="name">Выберите метод оплаты</p><br>
+            <div id="e-pay1" style="position: relative">
+                <ul class="methods" id="e-pay">
+
+                    <li>
+                        <button class="payment-btn" type="button" data-method="card" data-operator="up" data-additional="true" title="Карты РФ"></button>
+                    </li>
+					<!--
+					<li>
+                        <button class="payment-btn" type="button" data-method="cardworld" data-operator="up" data-additional="true" title="Карты (Другие страны)"></button>
+                    </li>
+					-->
+					<li>
+                        <button class="payment-btn" type="button" data-method="sbp" data-operator="up2" title="СБП"></button>
+                    </li>
+					<!--
+                    <li>
+                        <button class="payment-btn" type="button" data-method="qiwi" data-operator="up" data-additional="true" title="Qiwi"></button>
+                    </li>!-->
+                    <li>
+                        <button class="payment-btn" type="button" data-method="yandex" data-operator="ei2" title="ЮMoney"></button>
+                    </li>
+					
+					<!--
+                    <li>
+                        <button class="payment-btn" type="button" data-method="mts" data-operator="gp" title="МТС"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="megafon" data-operator="gp" title="Мегафон"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="beeline" data-operator="gp" title="Билайн"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="tele2" data-operator="gp" title="Теле2"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="yota" data-operator="gp" title="Yota"></button>
+                    </li>!-->
+                    <li>
+                        <button class="payment-btn" type="button" data-method="pm" data-operator="ei2" title="Perfect Money"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="crypto" data-operator="ei2" title="Крипта"></button>
+                    </li>
+					
+
+					<!--
+					<li>
+						<button class="payment-btn" type="button" data-method="card" data-operator="ei2" title="Карты СНГ"></button>
+                    </li>
+					<li>
+                        <button class="payment-btn" type="button" data-method="cardkzt" data-operator="fk" title="Карты (Тенге)"></button>
+                    </li>!-->
+
+                    <!--
+                    <li>
+                        <button class="payment-btn" type="button" data-method="yandexpay" data-operator="rk" title="Y.Pay"></button>
+                    </li>
+					!-->
+					
+					
+					<!--
+                    <li>
+                        <button class="payment-btn" type="button" data-method="wm" data-operator="wap" title="WMZ/WME"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="shc" data-operator="wap-fk" title="ShibaCoin (Крипта)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="wvs" data-operator="wap-fk" title="Waves (Крипта)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="dgc" data-operator="wap-fk" title="DogeCoin (Крипта)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="advcash" data-operator="ap" title="AdvCash (Крипта)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="fkwallet" data-operator="wap-fk" title="FKWallet (Крипто Кошелёк)"></button>
+                    </li>
+					!-->
+					
+					
+                    <!--
+                    <li>
+                        <button class="payment-btn" type="button" data-method="qiwi" data-operator="qiwi" title="Qiwi"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="card" data-operator="ym" title="Карты(ЮMoney)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="card" data-operator="qiwi" title="Карты(Киви)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="card" data-operator="rk" title="Карты(Робокасса)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="yandex" data-operator="ym" title="ЮMoney"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="crypto" data-operator="ei2" title="Криптовалюта"></button>
+                    </li>
+					<li>
+                        <button class="payment-btn" type="button" data-method="rk" data-operator="rk" title="Robokassa(Все остальные методы)"></button>
+                    </li>
+                    <li>
+                        <button class="payment-btn" type="button" data-method="wap" data-operator="wap" title="Wapkassa(Все остальные методы)"></button>
+                    </li>
+                    !-->
+                </ul>
+                <div class="over"></div>
+            </div>
+        </div>
+        <div id="additional_info" style="display: none">
+            <div class="close_bModal" data-type="add_info">
+                <img src="assets/img/close.svg" alt="">
+            </div>
+            <p class="asd"></p><br>
+            <p><span>Требуются данные: </span></p>
+
+            <input class="input" type="email" name="email" id="input_email" placeholder="Введите эмайл"><br>
+
+            <div class="action" style="justify-content: center">
+                <button type="submit" style="width: 100%" data-ind="add_button">Продолжить</button>
+            </div>
+            <p class="privacy_policy">
+                Нажимая кнопку <span>"Продолжить"</span> Вы автоматически
+                соглашаетесь с <a href="Dogovor-oferta.pdf">пользовательским соглашением.</a>
+            </p>
+        </div>
+    </form>
+</div>
+
+<div class="rules content_margin">
+    <div class="container">
+        
+        <div class="rule_box box_light">
+            <div class="head">
+                <p class="title">1. Основные правила:</p>
+                <p class="box_status active">Развернуть <img src="/assets/img/down.png" alt=""> </p>
+                <p class="box_status">Свернуть <img src="/assets/img/up.png" alt=""> </p>
+            </div>
+            <div class="rule_content">
+                <span>1.1</span> Незнание правил не освобождает вас от ответственности;<br>
+                <span>1.2</span> Начав играть на наших серверах, Вы автоматически подтверждаете своё согласие с данным сводом правил;<br>
+                <span>1.3</span> Администратор вправе наказать игрока по причине, не указанной в настоящих правилах;<br>
+                <span>1.4</span> Администрация не несет ответственности за временную или постоянную невозможность игры на сервере конкретным лицом или группой лиц;<br>
+                <span>1.5</span> Администрация не несет ответственности за потерю игровых ценностей в следствии нарушения работоспособности сервера или его плагинов;<br>
+                <span>1.6</span> Администрация не гарантирует работоспособность сервера, а также сохранность информации на нем и продолжение работы над ним;<br>
+                <span>1.7</span> Администрация сервера не гарантирует надёжную работу в предоставлении услуг и сервисов, а также не несёт ответственность за ущерб, который может быть причинён пользователям вследствие сбоев в линиях связи, ошибочного использования предоставляемых услуг, дефектов программного обеспечения или других действий, которые могут привести к возникновению нежелательных ситуаций;<br>
+                <span>1.8</span> Игроки обязаны соблюдать все правила;<br>
+                <span>1.9</span> Администрация ведет логи всех действий игроков на сервере и всех сообщений чата;<br>
+                <span>1.10</span> Администрация имеет право корректировать данный свод правил без уведомления игрока;<br>
+                <span>1.11</span> Оскорбление, провоцирование администрации запрещено.<br>
+            </div>
+        </div>
+        
+        <div class="rule_box box_light">
+            <div class="head">
+                <p class="title">2. Правила чата:</p>
+                <p class="box_status active">Развернуть <img src="/assets/img/down.png" alt=""> </p>
+                <p class="box_status">Свернуть <img src="/assets/img/up.png" alt=""> </p>
+            </div>
+            <div class="rule_content">
+                <span>2.1</span> Запрещен Капс/Спам/Флуд в любом из чатов;<br>
+                <span>2.2</span> Запрещены унижения, оскорбления игроков;<br>
+                <span>2.3</span> Запрещена нецензурная лексика (маты, скрытые маты);<br>
+                <span>2.4</span> Запрещено рекламировать/упоминать посторонние ресурсы, которые не связаны с проектом или его ресурсами;<br>
+                <span>2.5</span> Чатами для рекламы/покупки/продажи разрешено пользоваться только в их тематичных целях;<br>
+                <span>2.6</span> Запрещено упоминать/оскорблять родных и близких игроков;<br>
+                <span>2.7</span> Запрещается розжиг межнациональной розни, подстрекательство на конфликт этой темы, расизм;<br>
+                <span>2.8</span> Запрещено как-либо обходить блокировку чата;<br>
+                <span>2.9</span> Запрещено вызывать игроков на проверку читов;<br>
+                <span>2.10</span> Запрещено отправлять свои контактные данные(дискорд, вк и т.д) в чатах (исключение: личные сообщения);<br>
+                <span>2.11</span> Запрещено продавать ресурсы или услуги ВНЕ серверного чата, например через дискорд;<br>
+                <span>2.12</span> Самопризнание в нарушении правил проекта является поводом для бана.<br>
+            </div>
+        </div>
+        
+        <div class="rule_box box_light">
+            <div class="head">
+                <p class="title">3. Аккаунт:</p>
+                <p class="box_status active">Развернуть <img src="/assets/img/down.png" alt=""> </p>
+                <p class="box_status">Свернуть <img src="/assets/img/up.png" alt=""> </p>
+            </div>
+            <div class="rule_content">
+                <span>3.1</span> Ник не должен содержать:<br>
+                <span>3.1.1</span> Мата, скрытого мата, унижений, оскорблений;<br>
+                <span>3.1.2</span> Схожесть с названием других проектов/чит клиентов;<br>
+                <span>3.1.3</span> Схожесть с Администраторами, Ютуберами проекта;<br>
+                <span>3.1.4</span> Схожесть с никами пользователей из ЧС Проекта;<br>
+                <span>3.2</span> Запрещается предоставлять свой аккаунт другим людям;<br>
+                <span>3.3</span> Ответственность несет владелец аккаунта, независимо от того, кто совершал действия под данным аккаунтом;<br>
+                <span>3.4</span> Запрещена продажа/передача аккаунтов, продажа привилегий;<br>
+                <span>3.5</span> Донат невозможно перенести на другой аккаунт.<br>
+            </div>
+        </div>
+        
+        <div class="rule_box box_light">
+            <div class="head">
+                <p class="title">4. Игровые правила:</p>
+                <p class="box_status active">Развернуть <img src="/assets/img/down.png" alt=""> </p>
+                <p class="box_status">Свернуть <img src="/assets/img/up.png" alt=""> </p>
+            </div>
+            <div class="rule_content">
+                <span>4.1</span> Запрещено мошенничество, обман администрации;<br>
+                <span>4.2</span> Запрещено продавать/покупать у игроков игровые ценности за реальную валюту;<br>
+                <span>4.3</span> Запрещено пользоваться всем, что упрощает процесс игры, а именно:<br>
+                <span>4.3.1</span> Сторонними программами, скриптами, читами, кликерами;<br>
+                <span>4.3.2</span> Модами, запрещенными пунктом 4.12;<br>
+                <span>4.4</span> Запрещено как-либо помогать, укрывать нарушителя или способствовать в его неправомерных действиях;<br>
+                <span>4.5</span> Запрещено играть на проекте, если Ваши аккаунты были неоднократно блокированы пунктом 4.3 и его подпунктам;<br>
+                <span>4.6</span> Запрещено вызывание неполадок в работе сервера или попытки обрушить сервер, путем специально вызванных лагов или подобного;<br>
+                <span>4.6.1</span> Запрещена постройка и запуск механизмов, приводящих к одновременной активации большого количества поршней. Для ферм на поршнях рекомендуется использовать наблюдатели, которые активируют малое количество поршней <br>
+                <span>4.7</span> Запрещено выдавать себя за Администрацию, устанавливать ники похожие на Администрацию или их префиксы;<br>
+                <span>4.8</span> Запрещено использование/скрытие багов/недоработок сервера;<br>
+                <span>4.9</span> Запрещено играть/взаимодействовать и помогать на режиме с игроками в количестве больше, чем разрешено на режиме.<br>
+                <span>4.10</span> Запрещено строительство половых органов, нацистских символик, лавакастов;<br>
+                <span>4.11</span> Запрещено подстрекать третьих лиц на нарушение правил;<br>
+                <span>4.12</span> Полный список запрещенных модов <span><a href="https://forum.funtime.su/modifications">[смотрите здесь]</a></span><br>
+                <br>
+                <span>Примечание:</span> За многочисленное и постоянное нарушение пунктов <span>4.3</span> и <span>4.4</span> настоящих правил мы вправе полностью обнулить все Ваши аккаунты<br>
+                <!--
+				<div class="rule_box">
+                    <div class="head">
+                        <p class="title"><span>[4.12]</span> Список запрещенных модификаций:</p>
+                        <p class="box_status active">Развернуть <img src="/assets/img/down.png" alt=""> </p>
+                        <p class="box_status">Свернуть <img src="/assets/img/up.png" alt=""> </p>
+                    </div>
+                    <div class="rule_content">
+					    <!--
+                        <span>[X]</span> Любая мини-карта и BetterPvP;<br>
+                        <span>[X]</span> !LabyMod тоже является запрещенным модом!;<br>
+                        <span>[X]</span> X-Ray (ресурс-пак, advanced-xray, Xray-версия);<br>
+                        <span>[X]</span> Baritone/Fabritone;<br>
+                        <span>[X]</span> ChestStealer, ItemScroller, MouseTweaks;<br>
+                        <span>[X]</span> InventoryProfilesNext, InventoryTotem;<br>
+                        <span>[X]</span> FreeCam;<br>
+                        <span>[X]</span> Torohealth / ToroHealth Damage Indicators, Damage Indicator, Neat, MobHealthBar, Hwyla;<br>
+                        <span>[X]</span> ElytraSwap;<br>
+                        <span>[X]</span> ChunkAnimator, WorldEdit;<br>
+                        <span>[X]</span> Schematica / Litematica;<br>
+                        <span>[X]</span> FLauncher, Salwyrr Launcher;<br>
+                        <span>[X]</span> ReplayMod (разрешен подтвержденным ютуберам проекта);<br>
+                        <span>[X]</span> Модификации, которые являются интерпретацией функций чит-клиента.<br>
+						
+                        Полный список <span><a href="https://forum.funtime.su/modifications">[смотрите здесь]</a></span><br>
+                    </div>
+                </div>
+				-->
+            </div>
+        </div>
+        
+        <div class="rule_box box_light">
+            <div class="head">
+                <p class="title">5. Правила проверки ПО:</p>
+                <p class="box_status active">Развернуть <img src="/assets/img/down.png" alt=""> </p>
+                <p class="box_status">Свернуть <img src="/assets/img/up.png" alt=""> </p>
+            </div>
+            <div class="rule_content">
+                <span>5.1</span> Вы обязаны выполнять требования Проверяющего<br>
+				(<span>Важно!</span> Вы должны понимать, что проверка проводится исключительно в целях поиска читов, запрещённых модификаций, программ и другого запрещённого ПО, поэтому если Проверяющий просит Вас выполнить нелогичные для проверки действия, например: включить веб-камеру, “покукарекать”, дать ему ресурсы — отключайтесь от проверки и срочно сообщите об этом Администрации)<br>
+                <span>5.2</span> Данный свод правил не окончателен и может изменяться в зависимости от требований Проверяющего;<br>
+                <span>5.3</span> Следите за чатом во время проверки, если Вы не увидели/проигнорировали сообщение от Проверяющего, это не будет расцениваться поводом для разблокировки аккаунта<br>
+
+                <span>5.4</span> В случае если у Вас возникли непредвиденные обстоятельства, необходимо обязательно сообщить об этом Проверяющему;<br>
+                <span>5.5</span> Запрещается препятствовать проведению проверки: долго открывать папки, задавать неуместные вопросы, оскорблять/унижать Проверяющего, игнорировать его требования и так далее;<br>
+                <span>5.6</span> Во время проверки запрещается удалять какие-либо файлы с Вашего ПК, в том числе очищать корзину;<br>
+                <span>5.7</span> Во время проверки запрещается выходить из Minecraft, также не забывайте, “крашнул майн”, “был в афк” — не расцениваются как повод для разблокировки аккаунта;<br>
+                <span>5.8</span> Запрещается снимать ход проверки, исключение: личное разрешение Проверяющего;<br>
+                <span>5.9</span> Проверяющий имеет право попросить Вас установить программы для эффективного и быстрого проведения проверки.<br>
+				<div class="rule_box">
+                    <div class="head">
+                        <p class="title"><span>5.9</span> Список программ:</p>
+                        <p class="box_status active">Развернуть <img src="/assets/img/down.png" alt=""> </p>
+                        <p class="box_status">Свернуть <img src="/assets/img/up.png" alt=""> </p>
+                    </div>
+                    <div class="rule_content">
+                        <span><a href="https://anticheat.ac/download/">Ocean</a></span> - Программа, которая автоматически проверяет Ваш ПК на наличие или использование запрещенного ПО;<br>
+                        <span><a href="https://anydesk.com/ru">AnyDesk</a></span> - Приложение для удалённого рабочего стола. Проще говоря, позволяет другому человеку управлять вашим ПК. Вы можете в любой момент отключить программу;<br>
+                        <span><a href="https://voidtools.com/ru-ru/">Everything</a></span> - Программа, при помощи которой осуществляется мгновенный поиск по папкам, названиям или весу файлов;<br>
+                        <span><a href="https://github.com/ponei/JournalTrace/releases/tag/1.0">JournalTrace</a></span> - Программа, при помощи которой можно отследить действия, которые пользователь совершал с файлами и папками;<br>
+                        <span><a href="https://nirsoft.net/utils/previous_files_recovery.html">PreviousFilesRecovery</a></span> - Программа, при помощи которой можно узнать, какие файлы и папки удалялись, с возможностью восстановления;<br>
+                        <span><a href="https://privazer.com/ru/download-shellbag-analyzer-shellbag-cleaner.php">ShellBags Analyzer & Cleaner</a></span> - Программа, при помощи которой можно узнать, какие папки посещались, удалялись и прочее;.<br>
+                        <span><a href="https://processhacker.sourceforge.io/downloads.php">Process Hacker 2</a></span> - Программа, которая позволяет залезть в память устройства и свойства процессов, при помощи которой можно искать некоторые спрятанные читы;<br>
+                        <span><a href="https://systeminformer.sourceforge.io/">SystemInformer</a></span> - Программа, которая позволяет залезть в память устройства и свойства процессов, при помощи которой можно искать некоторые спрятанные читы;<br>
+                        <span><a href="https://nirsoft.net/utils/usb_drive_log.html">USB-DriveLog</a></span> - Программа, при помощи которой можно отследить присоединение/отключение внешних носителей (USB Флешек);<br>
+						<span><a href="https://nirsoft.net/utils/usb_devices_view.html">USB-Deview</a></span> - Программа, при помощи которой можно отследить присоединение/отключение внешних устройств (USB устройств);<br>
+                        <span><a href="https://nirsoft.net/utils/executed_programs_list.html">ExecutedProgramsList</a></span> - Программа, при помощи которой осуществляется поиск и анализ ранее запускавшихся приложений или программ;<br>
+                        <span><a href="https://nirsoft.net/utils/win_prefetch_view.html">WinPrefetchView</a></span> - Программа, при помощи которой проводится подробный анализ папки Prefetch. При помощи этой папки мы находим ранее запускавшиеся .exe приложения;<br>
+                        <span><a href="https://nirsoft.net/utils/computer_activity_view.html">LastActivityView</a></span> - Программа, при помощи которой можно проанализировать активность ПК, чтобы найти запускавшиеся .exe-читы;<br>
+                        <span><a href="https://github.com/ponei/CachedProgramsList/releases/tag/1.1">CachedProgramsList</a></span> - Программа, позволяющая найти в памяти системы информацию о запускавшихся файлах;<br>
+                        <span><a href="https://nirsoft.net/utils/open_save_files_view.html">OpenSaveFilesView</a></span> - Программа, позволяющая найти в памяти системы информацию о запускавшихся файлах.<br>
+                        <br><span>Важно!</span> Проверяющие с рангом Method имеют возможность требовать установить другие программы. <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="rule_box box_light">
+            <div class="head">
+                <p class="title">9. Платные услуги:</p>
+                <p class="box_status active">Развернуть <img src="/assets/img/down.png" alt=""> </p>
+                <p class="box_status">Свернуть <img src="/assets/img/up.png" alt=""> </p>
+            </div>
+            <div class="rule_content">
+                <!-- <span>9.1</span> Деньги, потраченные на услуги сервера, не возвращаются не при каких обстоятельствах.<br> -->
+                <span>9.1</span> Попытки махинаций оплатами, или ввод Администрации в заблуждение наказываются баном без возврата средств;<br>
+                <!-- <span>9.3</span> Администрация имеет полное право на отказ в предоставление услуг по причинам: неадекватность, требование несуществующих услуг, наглеж, оскорбления, и т.д.<br> -->
+                <span>9.2</span> Предоставьте чек оплаты, если хотите написать Администрации о пропаже, непоявлении доната после покупки. Без данного подтверждения администрация вправе отказать Вам в предоставлении купленной услуги;<br>
+                <span>9.3</span> Администрация не обязана предоставлять доказательства нарушений донатера у которого сняли привилегию за нарушение выше указанных правил.<br>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div class="container-fluid footer-container">
+    <div class="container">
+        <div class="footer" style="padding-top: 20px">
+            <p class="copyright ">Сервер FunTime никак не относится к Mojang, AB.<br> ИП Литвинчук Николай
+                Николаевич<br>
+                ИНН 644940989449, ОРГНИП 322645700028254<br>
+				Копирование контента с сайта, серверов проекта запрещено.<br><a href="Dogovor-oferta.pdf">Договор оферты</a> | <a href="privacy.pdf">Политика
+                    обработки персональных данных</a></p>
+            <p class="developer">© 2024 FunTime.su<br> Все Права Защищены</p>
+        </div>
+        <div class="footer" style="height: 50px; justify-content: center">
+            <div class=""><img src="assets/img/logos/spb.svg" style="width: 100px" alt=""></div>
+            <div class=""><img src="assets/img/logos/Mir-logo.SVG.svg" style="width: 100px" alt=""></div>
+            <div class=""><img src="assets/img/logos/mc_symbol.svg" style="width: 100px" alt=""></div>
+            <div class=""><img src="assets/img/logos/vbm_blu_2021.png" style="width: 100px" alt=""></div>
+    </div>
+</div>
+</div>
+
+
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+
+<script src="assets/js/clipboard.min.js"></script>
+<script src="assets/js/main.js?v=224"></script>
+<script src="npm/sweetalert2%4011.0.18/dist/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="npm/sweetalert2%4011.0.18/dist/sweetalert2.min.css">
+<link rel="stylesheet" href="npm/%40sweetalert2/theme-dark%405.0.1/dark.min.css">
+
+<!-- <script src="https://widget.unitpay.monеey/unitpay.js"></script> -->
+</body>
+</html>
